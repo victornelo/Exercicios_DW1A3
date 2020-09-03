@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <meta charset="utf-8">
+        <title>Formulário</title>
+        </head>
+	 <body>
+         <form>
+             <fieldset>
+                 <legend>Dados da Pessoa</legend>
+                <p>Nome:
+                    <input type="text" name="nome" size="30" maxlength="30">
+                </p>
+                <p>Digite uma senha:
+                    <input type="password" name="password" size="30" maxlength="30">
+                </p>
+                <p>Sexo:
+                    <input id="female" type="radio" name="sexo" value="m"> 
+                    <label for="female">Feminino</label>
+                    <input id="male" type="radio" name="sexo" value="f"> 
+                    <label for="male">Masculino</label>
+                </p>
+                <label for="username">Data de nascimento:</label>
+                <input type="date" name="depart" />
+                <input type="submit" value="Enviar" />
+
+                <p>Estado:
+                <select name="estados">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Detalhes de contato</legend>
+            <label>Email:<br><input type="email" name="email"  /></label><br>
+            <label>Celular:<br><input type="tel" name="mobile" size="11" maxlength="11" /></label><br>
+            <label>Telefone:<br><input type="tel" name="telephone" size="11" maxlength="11" /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Outros:</legend>
+            <p>Quais serviços de Streaming possui?
+                <input type="checkbox" name="" value="">Netflix
+                <input type="checkbox" name="" value="">Amazon Prime Video
+                <input type="checkbox" name="" value="">Telecine Play
+                <input type="checkbox" name="" value="">HBO GO
+            </p>
+            <p>Upload de imagem:
+                <input type="file" name="imagem" /><br>
+                <input type="submit" value="Upload" />
+            </p>
+        </fieldset>
+            <p>Clique para enviar as informações
+                <input type="submit" name="enviar" value="Enviar"/>
+            </p>
+         </form>
+     </body>
+    </html>
